@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <main id="main" class="content-area col-sm-12 col-md-8 site-main <?php echo esc_attr(unite_get_option( 'site_layout' )); ?>" role="main">
-		<?php 
+	<?php 
 			$realestate_c = get_transient( 'realestate_cached' );
 			   
 				if ( false === $realestate_c ):		
@@ -24,9 +24,9 @@
 		?>  
  
 		<article class="realestate_item">
-			<h2 class="entry-title"><a href="<?php echo get_permalink($var_real_estate); ?>" rel="bookmark"><?php echo $realestate_ct->post_title; ?></a></h2>
+			<h2><a href="<?php echo get_permalink($var_real_estate); ?>" rel="bookmark"><?php echo $realestate_ct->post_title; ?></a></h2>
 				<?php echo get_the_post_thumbnail( $var_real_estate, 'unite-featured', array( 'class' => 'thumbnail') ); ?>
-   		    	<?php get_template_part( 'param-list', '', ['real_estate_id' => $var_real_estate]); ?>
+   		    	<?php get_template_part( './template-parts/param-list', '', ['real_estate_id' => $var_real_estate]); ?>
 		</article>
 
 		<?php	

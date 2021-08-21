@@ -20,7 +20,7 @@ get_header();
         		 ?>
                   
 				<article class="realestate_item">
-					  <h2 class="entry-title"><a href="<?php echo get_permalink($var_real_estate); ?>" rel="bookmark"><?php echo $agensy_real_estat->post_title; ?></a></h2>
+					  <h2><a href="<?php echo get_permalink($var_real_estate); ?>" rel="bookmark"><?php echo $agensy_real_estat->post_title; ?></a></h2>
 						<?php echo get_the_post_thumbnail( $var_real_estate, 'unite-featured', array( 'class' => 'thumbnail') ); ?>
                         <?php get_template_part( './template-parts/param-list', '', ['real_estate_id' => $var_real_estate]);  ?>
 				</article>

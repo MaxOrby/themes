@@ -4,6 +4,8 @@ Template:       unite
 Version:        0.1.0
 */
 
+@import url("../unite/style.css");
+
 .realestate_item {
     margin-bottom: 4em;
 }
@@ -14,3 +16,13 @@ Version:        0.1.0
     object-fit: cover;
     height: auto;
 } 
+
+.post-navigation .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.entry-title {
+    font-weight: 300;
+}
