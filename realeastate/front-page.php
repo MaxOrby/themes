@@ -11,6 +11,10 @@
 							array(
 								'taxonomy' => 'realestate-categories',
 								'terms'    => 'realestate'
+<<<<<<< HEAD
+=======
+							
+>>>>>>> 979c1161cab79f07134ead4648c304f10f5bcc0f
 							)
 						)
 					) );
