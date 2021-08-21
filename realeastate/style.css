@@ -1,0 +1,16 @@
+/*
+Theme Name:     Real Estate
+Template:       unite
+Version:        0.1.0
+*/
+
+.realestate_item {
+    margin-bottom: 4em;
+}
+
+.realestate img,
+.realestate_item img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
