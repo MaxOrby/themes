@@ -10,8 +10,7 @@
 						'tax_query' => array(
 							array(
 								'taxonomy' => 'realestate-categories',
-								'terms'    => 'realestate',
-							
+								'terms'    => 'realestate'
 							)
 						)
 					) );
